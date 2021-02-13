@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 10px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+body {
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+}
+
+.background{
+    background: url('../files/img/form-bg.png')center center;
+    background-repeat: no-repeat;
+    background-size: 600px 600px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    padding: 7px 10px;
+    margin-left: 10px;
+    text-indent: 10px;
+    font-size: 12px;
+}
+
+.input-field{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field i {
+    font-size: 25px;
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    border: none;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #fff;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+/* ====================================== LOGIN / REGISTER ==================================*/
+
+#login {
+    position: absolute;
+    transform: translateY(-700px);
+    transition: 0.3s;
+}
+
+#register {
+    transition: 0.3s;
+    position: absolute;
+}
+
+.login,
+.register {
+    text-align: center;
+    height: 500px;
+    width: 400px;
+}
+
+.login .logo,
+.register .logo {
+    margin-top: 30px;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.login .header h1,
+.register .header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.login-form
+.register-form {
+    margin-top: 30px;
+}
+
+.login #login-btn,
+.register #register-btn {
+    margin-bottom: 15px;
+}
+
+.login .register-area h5,
+.register .login-area h5 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}

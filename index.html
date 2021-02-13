@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login / Register</title>
+</head>
+
+<body>
+    <div class="background">
+
+        <!--====================== LOGIN ================-->
+
+        <div class="login" id="login">
+            <div class="logo">
+                <img src="files/img/logo.png" alt="logo" width="80px" height="80px">
+            </div>
+            <div class="header">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="login-form">
+                <form>
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="BENUTZERNAME">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="PASSWORT">
+                    </div>
+                </form>
+            </div>
+            <button id="login-btn" onclick="log_Move()">LOGIN</button>
+            <div class="register-area">
+                <h5>Du hast keinen Account?</h5>
+                <button>Register</button>
+            </div>
+        </div>
+
+        <!--====================== REGISTER ================-->
+
+        <div class="register" id="register">
+            <div class="logo">
+                <img src="files/img/logo.png" alt="logo" width="80px" height="80px">
+            </div>
+            <div class="header">
+                <h1>REGISTRIEREN</h1>
+            </div>
+            <div class="register-form">
+                <form>
+                    <div class="input-field">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="BENUTZERNAME">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="PASSWORT">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" placeholder="PASSWORT WIEDERHOLEN">
+                    </div>
+                </form>
+            </div>
+            <button id="register-btn" onclick="reg_Move()">Register</button>
+            <div class="login-area">
+                <h5>Haben Sie bereits ein Konto?</h5>
+                <button>Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="files/js/main.js"></script>
+
+</html>
